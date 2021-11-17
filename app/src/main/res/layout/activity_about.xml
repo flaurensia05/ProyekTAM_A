@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_btn_bg_color"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/relabout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/backAbout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/radius"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/textAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Tentang App"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/imgThumb"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/textAbout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/hospitals" />
+
+        <TextView
+            android:id="@+id/abc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgThumb"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/about_app"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/va3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/abc"
+            android:background="@color/blue_btn_bg_color"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/af3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/va3"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="About developer"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/gname"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/af3"
+            android:background="@color/white"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/tname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/af3"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/gname"
+            android:text="Nama Anda"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/gemail"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tname"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_email_black_24dp" />
+
+        <TextView
+            android:id="@+id/temail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tname"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/gemail"
+            android:text="email anda"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+</ScrollView>
